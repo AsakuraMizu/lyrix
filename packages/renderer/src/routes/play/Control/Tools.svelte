@@ -6,6 +6,18 @@
   import Fullscreen from '@iconify-icons/mdi/fullscreen';
   import FullscreenExit from '@iconify-icons/mdi/fullscreen-exit';
   import { ops, playing } from '/@/stores/music';
+
+  let fullscreen = !!document.fullscreenElement;
+
+  const toggleFullscreen = async () => {
+    if (fullscreen) {
+      await document.exitFullscreen();
+      fullscreen = false;
+    } else {
+      await document.documentElement.requestFullscreen();
+      fullscreen = true;
+    }
+  }
 </script>
 
 <Row>
@@ -15,8 +27,11 @@
     </Button>
   </Col>
   <Col>
-    <Button icon>
-      <Icon icon={Fullscreen} height="auto" />
+    <Button
+      icon
+      on:click={toggleFullscreen}
+    >
+      <Icon icon={fullscreen ? FullscreenExit : Fullscreen} height="auto" />
     </Button>
   </Col>
 </Row>

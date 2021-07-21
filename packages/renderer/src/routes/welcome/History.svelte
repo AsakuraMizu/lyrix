@@ -16,7 +16,7 @@
 
 <div class="px600 elevation-5">
   <List>
-    {#each $entries.reverse() as e}
+    {#each $entries.sort((a, b) => b.time - a.time) as e}
       <ListItem on:click={() => play(e)}>
         {e.name}
         <span slot="subtitle">{e.artist}</span>

@@ -9174,10 +9174,10 @@ svelte-materialify@^0.3.11:
 
 "svelte-materialify@patch:svelte-materialify@^0.3.11#./svelte-materialify.patch::locator=lyrix%40workspace%3A.":
   version: 0.3.11
-  resolution: "svelte-materialify@patch:svelte-materialify@npm%3A0.3.11#./svelte-materialify.patch::version=0.3.11&hash=c9bb2b&locator=lyrix%40workspace%3A."
+  resolution: "svelte-materialify@patch:svelte-materialify@npm%3A0.3.11#./svelte-materialify.patch::version=0.3.11&hash=f4ec6a&locator=lyrix%40workspace%3A."
   peerDependencies:
     svelte: ">=3.29.4"
-  checksum: beb46cffcb95b4b32be96ee7727b51a15198ecb458cab96197c7f799bca83f87bbb8c65880f61bbb76ff9a036e3ddeedf855ab92c88feabb554401574f0c4873
+  checksum: c1e264c3e0563541272b078d6aba1cf284a96399ca8a8a0a0f0ba1b69d26fc4c7f20e0805c5b5625c693145395ad9b85871ffb2d46851f171703733ea60d7d77
   languageName: node
   linkType: hard
 

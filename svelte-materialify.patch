@@ -4,10 +4,32 @@ index ca8af064fab01d5e44af97122c0b2b33a79a396f..80fc06e5d10ee8012bc095be9c2484c5
 +++ b/dist/components/Slider/Slider.svelte
 @@ -48,7 +48,7 @@
    }
- 
+
    onMount(async () => {
 -    const { default: noUiSlider } = await import('./nouislider.min');
 +    const { default: _noUiSlider } = await import('./nouislider.min');
- 
+
      noUiSlider.cssClasses.tooltip = `tooltip ${thumbClass}`;
      noUiSlider.create(sliderElement, {
+diff --git a/dist/components/Slider/nouislider.min.js b/dist/components/Slider/nouislider.min.js
+index 50ecceb1ed0dd0f544ec5c8dfc0c15aaaea88aa5..552a25daf0bb35f40b1fb1ae5df7c338ca22e4f7 100644
+--- a/dist/components/Slider/nouislider.min.js
++++ b/dist/components/Slider/nouislider.min.js
+@@ -1,11 +1,12 @@
+ /* eslint-disable */
+ /*! nouislider - 14.6.1 - 8/17/2020 */
+ !(function (t) {
+-  'function' == typeof define && define.amd
+-    ? define([], t)
+-    : 'object' == typeof exports
+-    ? (module.exports = t())
+-    : (window.noUiSlider = t());
++  // 'function' == typeof define && define.amd
++  //   ? define([], t)
++  //   : 'object' == typeof exports
++  //   ? (module.exports = t())
++  //   : (window.noUiSlider = t());
++  window.noUiSlider = t();
+ })(function () {
+   'use strict';
+   var lt = '14.6.1';
