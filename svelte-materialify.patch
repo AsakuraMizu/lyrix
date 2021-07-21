@@ -1,0 +1,13 @@
+diff --git a/dist/components/Slider/Slider.svelte b/dist/components/Slider/Slider.svelte
+index ca8af064fab01d5e44af97122c0b2b33a79a396f..80fc06e5d10ee8012bc095be9c2484c5badfbace 100644
+--- a/dist/components/Slider/Slider.svelte
++++ b/dist/components/Slider/Slider.svelte
+@@ -48,7 +48,7 @@
+   }
+ 
+   onMount(async () => {
+-    const { default: noUiSlider } = await import('./nouislider.min');
++    const { default: _noUiSlider } = await import('./nouislider.min');
+ 
+     noUiSlider.cssClasses.tooltip = `tooltip ${thumbClass}`;
+     noUiSlider.create(sliderElement, {

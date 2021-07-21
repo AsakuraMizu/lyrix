@@ -1,0 +1,23 @@
+.px600 {
+  width: 600px;
+}
+
+@media screen and (max-width: 600px) {
+  .px600 {
+    width: 100%;
+  }
+}
+
+.px800 {
+  width: 800px;
+}
+
+@media screen and (max-width: 800px) {
+  .px800 {
+    width: 100%;
+  }
+}
+
+.s-app {
+  background-color: transparent !important;
+}
