@@ -24,7 +24,7 @@
   };
 </script>
 
-<Dialog bind:active fullscreen>
+<Dialog bind:active persistent>
   <Card>
     <CardTitle>设置</CardTitle>
     <CardText>

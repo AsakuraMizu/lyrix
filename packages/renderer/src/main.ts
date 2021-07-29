@@ -9,7 +9,10 @@ dayjs.extend(updateLocale);
 dayjs.locale('zh-cn');
 
 import CanvasNest from 'canvas-nest.js';
-new CanvasNest(document.body);
+new CanvasNest(document.body, {
+  count: 300,
+  opacity: 0.6,
+});
 
 import './index.css';
 // import './stores/init';

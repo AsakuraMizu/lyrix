@@ -40,8 +40,6 @@
   >
     <div class="d-flex layer align-center">
       <div class="midline" />
-    </div>
-    <div class="layer">
       <div class="progress" style={`left: ${$progress * 100}%`} />
     </div>
   </div>
@@ -63,15 +61,18 @@
   }
 
   .midline {
+    position: absolute;
     width: 100%;
-    border-bottom: 1px solid grey;
+    height: 5px;
+    background-color: grey;
   }
 
   .progress {
     position: absolute;
-    height: 100%;
-    border: 2px solid blue;
-
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 100%;
   }
 
   .time {
