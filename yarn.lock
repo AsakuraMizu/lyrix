@@ -7158,9 +7158,9 @@ __metadata:
   linkType: hard
 
 "nouislider@npm:^15.2.0":
-  version: 15.2.0
-  resolution: "nouislider@npm:15.2.0"
-  checksum: 19a494952b0a599ce8aca225c62fa50242b35f8d384470bf2d6494d00b375411dfafa2d42624b1e0500a1532561755b86ce64da9644a8bbedc8adf2d38c2402f
+  version: 15.5.0
+  resolution: "nouislider@npm:15.5.0"
+  checksum: 1f3feb18c435df7ebf08d43db03d980758c8cf74d581bd4a82152728939a3b214f073c427c13eaf36ba5987f6d7ef53644eed465522a7b40fd30e219aa3b004f
   languageName: node
   linkType: hard
 

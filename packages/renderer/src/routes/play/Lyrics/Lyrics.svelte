@@ -29,6 +29,8 @@
     index.set(runner.curIndex());
   }
   setContext('lyrix:index', index);
+
+  runner.timeUpdate
 </script>
 
 <div style={`--fontSize: ${$fontSize}px; --fontSizeX: ${$fontSizeX}px`}>
@@ -36,8 +38,8 @@
     <SingleLine text="" i={$index === -1 && i === 0 ? -1 : -2} />
   {/each}
   {#each runner.getLyrics() as l, i (l.timestamp)}
-    <div animate:flip={{ duration: 250 }} hidden={i < $index - $semi || i > $index + $semi}>
-      <SingleLine text={l.content} {i} />
+    <div animate:flip={{ duration: 600 }} hidden={i < $index - $semi || i > $index + $semi}>
+      <SingleLine text={l.content} {i} time={l.timestamp} />
     </div>
   {/each}
   {#each Array.from({ length: $semi - (lrc.lyrics.length - $index - 1) }) as _}
